@@ -127,6 +127,7 @@ body{
 /*Tamanho do card*/
 .card{
     max-width: 650px;
+    border-color: #FD8301 !important;
 }
 
 /*Foto de Perfil*/
@@ -177,7 +178,7 @@ img{
 
 /*Linha que desce*/
 ::-webkit-scrollbar-thumb {
-	background: #E4A11B;
+	background: #FD8301;
 	border-radius: 15px;
 }
 
