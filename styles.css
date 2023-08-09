@@ -1,103 +1,105 @@
-body{
-    overflow-x: hidden;
+body {
+    background-color: black !important;
 }
 
-/*Fonte Padrão*/
-.letra{
+.card {
+    background-color: black !important;
+}
+
+.letra {
     color: #FD8301;
-    font-size: 20px;
+    font-size: 25px;
 }
 
-/*Primeira Imagem Background*/
-.img1{
-    background-image: url("img/L_H_A_2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+/*Navbar Config*/
+.navbar-config {
+    background-color: black;
+    width: 100%;
 }
 
-/*Segunda Imagem Background*/
-.img2{
-    background-image: url("img/L_H_A_2.png");
+button:hover {
+    color: #FD8301;
+    background-color: #FD8301;
+}
+
+/*Home Configuration*/
+.div-config-home {
+    background-color: black;
+}
+
+.img1 {
+    background-image: url("/src/img/L_H_A.png");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -20px;
+    justify-content: center;
+}
+
+.alinhamento-div {
     display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 15%;
+}
+
+.alinhamento-imagem {
+    margin-left: -10px;
+}
+
+.alinhamento-textual {
+    margin: 0px 0px 0px 10px;
+    /*top - right - bottom - left*/
+}
+
+/*Show Configuration*/
+.alinhamento2-div {
     height: 100%;
     width: 100%;
 }
 
-/*Terceiro Imagem Background*/
-.img3{
-    background-image: url("img/L_H_A_2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -20px;
-    display: flex;
-    height: 100%;
-    width: 100%;
+.card-body-show {
+    margin-left: 90px;
+    margin-right: 20px;
+
 }
 
-/*Quarto Imagem Background*/
-.img4{
-    background-image: url("img/L_H_A_2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -20px;
-    display: flex;
-    height: 100% !important; 
-    width: 100%;
-}
-
-/*Quinto Imagem Background*/
-.img5{
-    background-image: url("img/L_H_A_2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
-/*Alinhamento Divisão 1*/
-.alinhamento-div{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    margin-top: 10%;
-}
-
-.margem-tela-1{
-    margin: 5px 10px 120px;
-}
-
-/*Links de navegação*/
-.alinhamento-nav{
-    align-items: left;
-}
-
-/*Alinhamento Divisão 2*/
-.alinhamento2-div{
-    margin-top: 3%;
-    height: 100%;
-    width: 100%;
-}
-
-/*Alinhamento Divisão 3*/
-.alinhamento3-div{
-    margin-top: 2%;
+/*Academico Configuration*/
+.alinhamento3-div {
+    margin: 2px 80px 0px 0px;/*top - right - bottom - left*/
     height: 650px;
-    width: 100%;
+    width: 90%;
 }
 
-/*Alinhamento Divisão 4*/
-.alinhamento4-div{
-    margin-top: 8%;
+/*Carousel*/
+.carousel-inner-1 {
+    height: 550px;
+    width: 90%;
+}
+
+/*Card*/
+.card-body-academic {
+    height: 100%;
+    width: 90%;
+    padding: 30px !important;
+}
+
+/*Professional Configuration*/
+.alinhamento4-div {
+    margin: 2px 0px 0px 40px; /*top - right - bottom - left*/
     max-height: 80%;
     width: 100%;
 }
 
+.card-body-pro {
+    height: 100%;
+    width: 90%;
+}
+
+.button-home {
+    text-align: right !important;
+}
+
 /*Alinhamento Divisão 5*/
-.alinhamento5-div{
+.alinhamento5-div {
     padding: 5px;
     position: relative;
     text-align: center;
@@ -107,60 +109,33 @@ body{
     width: 100%;
 }
 
-/*Carousel Formação Acadêmica*/
-.carousel-inner-1{
-    height: 550px;
-    width: 100%;
-}
-
-/*Carousel de Contato*/
-.carousel-inner-2{
-    height: 350px;
-    width: 100%;
-}
-
-/*Corpo dos cards*/
-.card-body{
-    background-color: black !important;
-}
-
-/*Tamanho do card*/
-.card{
-    max-width: 650px;
-    border-color: #FD8301 !important;
-}
-
-/*Foto de Perfil*/
-img{
-    max-width: 230px;
-    max-height: 230px;
-    width: auto;
-    height: auto;
-}
-
-/*Links da tela Home e Profissional*/
-.lista-hover:link, .lista-hover:visited {
+/*Links - Home e Profissional*/
+.lista-hover:link,
+.lista-hover:visited {
     background-color: black !important;
     color: #FD8301 !important;
     text-align: center;
     font-size: 16px;
 }
-  
-.lista-hover:hover, .lista-hover:active {
+
+.lista-hover:hover,
+.lista-hover:active {
     background-color: #FD8301 !important;
     color: black !important;
     font-size: 16px;
 }
 
 /*Links dos icones*/
-.lista-icones:link, .lista-icones:visited {
+.lista-icones:link,
+.lista-icones:visited {
     background-color: black !important;
     color: black !important;
     text-align: center;
     font-size: 18px;
 }
-  
-.lista-icones:hover, .lista-icones:active {
+
+.lista-icones:hover,
+.lista-icones:active {
     background-color: #FD8301 !important;
     color: black !important;
     font-size: 18px;
@@ -172,14 +147,17 @@ img{
 
 /*Fundo que corre*/
 ::-webkit-scrollbar {
-	width: 10px;
-	background: Black; 
+    width: 10px;
+    background: Black;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+
 }
 
 /*Linha que desce*/
 ::-webkit-scrollbar-thumb {
-	background: #FD8301;
-	border-radius: 15px;
+    background: #FD8301;
+    border-radius: 15px;
 }
 
 /*Barra de Rolagem*/
@@ -187,15 +165,15 @@ img{
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
-    
+
     /* visual styling */
     height: 90vh;
-    flex-direction: column; 
+    flex-direction: column;
     padding: 10px;
 }
-  
+
 /* ======================================== */
-  
+
 /* Unrelated to scroll snap, visual styling */
 .rolagem {
     background: black;
@@ -204,3 +182,132 @@ img{
     box-sizing: border-box;
 }
 
+
+@media (min-width:750px), (max-width: 915px){
+    /*Show Configuration*/
+    .card-body-show {
+        margin-left: 40px;
+        margin-right: 20px;
+        padding: 25px;
+    }
+
+    .alinhamento3-div {
+        height: 130%;
+        width: 120%;
+        padding: 25px !important;
+    }
+    
+    .alinhamento4-div {
+        margin: 10px 0px 0px 0px; /*top - right - bottom - left*/
+        max-height: 80%;
+        width: 110%;
+        padding: 40px;
+    }
+}
+
+
+@media (max-width:749px) {
+
+    /*Home Configuration @Media*/
+    .img1 {
+        background-image: url("/src/img/L_H_A_2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .card-body-home {
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+        background-color: black;
+    }
+
+    .letra {
+        color: #FD8301;
+        font-size: 13px;
+    }
+
+    .alinhamento-div {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    /*Show Configuration*/
+    .card-body-show {
+        margin-left: 60px;
+        margin-right: 60px
+    }
+
+    /*Academico Configuration*/
+    .alinhamento3-div {
+        margin: 0px 0px 0px 5px; /*top - right - bottom - left*/
+        height: 650px;
+        width: 90%;
+        font-size: 13px;
+    }
+
+    /*Carousel*/
+    .carousel-inner-1 {
+        height: 550px;
+        width: 90%;
+    }
+
+    /*Card*/
+    .card-body-academic {
+        min-height: 10000px;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    /*Professional Configuration*/
+    .alinhamento4-div {
+        margin: 95px 0px 0px 40px; /*top - right - bottom - left*/
+        max-height: 80%;
+        width: 100%;
+    }
+
+    .card-body-pro {
+        height: 100%;
+        width: 90%;
+    }
+
+    .button-home {
+        text-align: right !important;
+    }
+
+    /*Alinhamento Divisão 5*/
+    .alinhamento5-div {
+        padding: 5px;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        margin-top: 15%;
+        max-height: 250px;
+        width: 100%;
+    }
+    .list-group-item {
+        background-color: black !important;
+        margin-top: 10%;
+    }
+    .list-group-item-margem{
+        margin-top: -10%;
+    }
+}
+
+/*Show Configuration @Media*/
+@media (max-width:950px) {
+    .alinhamento2-div {
+        margin-top: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+    }
+
+    
+}

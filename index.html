@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lucas Herculano Amaro</title>
-  <link rel="stylesheet" href="https://lucasherculanoamaro.github.io/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -14,22 +14,28 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body style="background-color: black;">
+<body>
 
-  <div>
+  
 
+  <!--Home-->
+  <section>
     <div class="img1">
-
-      <!--Apresentação-->
+      <!--Boas Vindas-->
       <div class="row letra" id="Home">
         <div class="col-md-3"></div>
         <div class="col alinhamento-div">
-          <div class="card card-body mb-3 border-0">
-            <div class="row no-gutters">
-              
+          <div class="card card-body-home border-0 ">
+            <div class="row no-gutters div-config-home">
+
+              <!--Divisão Foto-->
+              <div class="col-md-4 card-body-home alinhamento-imagem">
+                <img src="/src/img/perfil.jpg" alt="Foto de Perfil" style="width: 100%;">
+              </div>
+          
               <!--Boas Vindas-->
-              <div class="card-body col-md-8">
-                <h4 class="card-title text-warning">Olá, Muito Prazer!!!</h4>
+              <div class="card-body col-md-8 mb-3 alinhamento-textual">
+                <h5 class="card-title text-warning" style="font-size: 25px;">Olá, Muito Prazer!!!</h5>
                 <p class="card-text">Sinta-se à vontade para navegar no meu Portifólio.</p>
                 <p>Meu nome é <b>Lucas H. Amaro</b> e sou formado em <b>Análise e Desenvolvimento de Sistemas</b>. Aqui
                   irei apresentar meus estudos e trabalho com Desenvolvimento de Sistema e Análise de Dados.</p>
@@ -39,105 +45,111 @@
           </div>
         </div>
         <div class="col-md-3"></div>
-      </div>
-      <!--/Apresentação-->
 
-      <!--Links Navegação-->
-      <div class="margem-tela-1 text-warning">
-        <div class="row  alinhamento-nav">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
-            <!--Pagination-->
-            <nav aria-label="Page navigation">
-              <ul class="nav">
-
-                <li class="nav-item">
-                  <a class="nav-link rounded-pill lista-hover" href="#WhoIm">Apresentação</a>
+        <!--Navbar-->
+        <section>
+          <nav class="navbar navbar-expand-lg navbar-light navbar-config ">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav" style="margin-left: 400px;">
+                <li class="nav-item active">
+                  <a class="nav-link" style="color: #FD8301;" href="#WhoIm">Apresentação <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link rounded-pill lista-hover" href="#Studies">Formação Acadêmica</a>
+                  <a class="nav-link" style="color: #FD8301;" href="#Studies">Formação Academica</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link rounded-pill lista-hover" href="#Professional">Experiência Profissional</a>
+                  <a class="nav-link" style="color: #FD8301;" href="#Professional">Experiência Profissional</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link rounded-pill lista-hover" href="#Contacts">Contatos</a>
+                  <a class="nav-link" style="color: #FD8301;" href="#Contacts">Contatos</a>
                 </li>
-
               </ul>
-            </nav>
-            <!--/Pagination-->
-          </div>
-          <div class="col-md-3"></div>
-        </div>
+            </div>
+          </nav>
+        </section>
+        <!--/Navbar-->
+
       </div>
-      <!--/Links Navegação-->
-      <hr>
+      <!--/Boas Vindas-->
+
+      
+
     </div>
 
-    <!--Carta de Apresentação-->
-    <div class="img2">
-      <div class=" letra alinhamento2-div">
-        <div class="row">
-          <div class="col"></div>
-          <div class="col-md-18">
-            <div class="card border-0">
-              <div class="card-body">
-                <!--
-            <h3>Lucas Herculano Amaro</h3>
-            <h4>Analista de Sistema</h4>
-            <b>(11) 95639-6531<br>lucash.96@hotmail.com<br>www.linkedin.com/in/lucas-amaro-5711611ab</b>
-            -->
-                <h3 class="text-light" id="WhoIm">Apresentação</h3>
-                <p>Prezados,</p>
-                <p>Meu nome é Lucas Herculano Amaro, tenho 27 anos e sou graduado em Análise e Desenvolvimento de Sistemas pela Universidade Santo Amaro (UNISA), com formação no dia 30 de junho de 2023. Também cursei Desenvolvimento Full Stack Java Jr. na instituição Generation Brasil, com formação em abril de 2022.</p>
-                <p>Tive a oportunidade de estagiar no Hospital Israelita Albert Einstein, com Análise de Dados no núcleo BI. Ganhei experiência utilizando no dia a dia SQL Server, Visual Studio Data Tools, Reporting Services, Power BI etc.</p>
-                <p>Enquanto não tenho atividades profissionais, aproveito meu tempo para estudar e aprimorar meus conhecimentos. Um dos meus projetos é automatizar o cálculo de IBUTG e Metabolismo utilizando a linguagem de programação Java.</p>
-                <p>Outro projeto é com o desenvolvimento do Website da empresa Denart comércio de ferramentas e soluções construtivas. A proposta é desenvolver um site simples para os interessados em conhecer a empresa e seus serviços.</p>
+  </section>
+  <!--/Home-->
+
+  <!--Apresentação-->
+    <section>
+
+      <!--Carta de Apresentação-->
+      <div class="alinhamento2-div">
+        <div class="letra ">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-md-18">
+              <div class="card border-0 card-body-show">
+                <div class="card-body">
+                  <!--
+              <h3>Lucas Herculano Amaro</h3>
+              <h4>Analista de Sistema</h4>
+              <b>(11) 95639-6531<br>lucash.96@hotmail.com<br>www.linkedin.com/in/lucas-amaro-5711611ab</b>
+              -->
+                  <h3 class="text-light" id="WhoIm">Apresentação</h3>
+                  <p>Prezados,</p>
+                  <p>Meu nome é Lucas Herculano Amaro, tenho 27 anos e sou graduado em Análise e Desenvolvimento de Sistemas pela Universidade Santo Amaro (UNISA), com formação no dia 30 de junho de 2023. Também cursei Desenvolvimento Full Stack Java Jr. na instituição Generation Brasil, com formação em abril de 2022.</p>
+                  <p>Tive a oportunidade de estagiar no Hospital Israelita Albert Einstein, com Análise de Dados no núcleo BI. Ganhei experiência utilizando no dia a dia SQL Server, Visual Studio Data Tools, Reporting Services, Power BI etc.</p>
+                  <p>Enquanto não tenho atividades profissionais, aproveito meu tempo para estudar e aprimorar meus conhecimentos. Um dos meus projetos é automatizar o cálculo de IBUTG e Metabolismo utilizando a linguagem de programação Java.</p>
+                  <p>Outro projeto é com o desenvolvimento do Website da empresa Denart comércio de ferramentas e soluções construtivas. A proposta é desenvolver um site simples para os interessados em conhecer a empresa e seus serviços.</p>
+                </div>
               </div>
             </div>
+            <div class="col"></div>
           </div>
-          <div class="col"></div>
+  
         </div>
-
       </div>
-      <hr>
-    </div>
-    <!--/Carta de Apresentação-->
+      <!--/Carta de Apresentação-->
+  
+    </section>
+  <!--/Apresentação-->
 
-    <!--Formação Acadêmica-->
-    <div class="img3">
+  <!--Formação Acadêmica-->
+  <section>
+
+    <div>
       <div class="letra alinhamento3-div">
         <div class="row">
           <div class="col"></div>
           <div class="col-md-18">
-            <div class="card border-0">
-              <div class="card-body">
+            <div class="card border-0 card-body-academic">
+              <div class="card-body card-body-academic">
                 <h3 class="text-light" id="Studies">Formação Acadêmica</h3>
                 <!--Carousel-->
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 50px;">
-                  <ol class="carousel-indicators list-ol" >
+                  <div>
+                    <ol class="carousel-indicators list-ol" >
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                   </ol>
+                  </div>
+                  
                   <div class="carousel-inner carousel-inner-1">
                     <div class="carousel-item active">
-                      <h4 class="text-warning">Técnico de Segurança do Trabalho</h4>
-                      <p>A primeira formação que conquistei após o ensino médio foi Técnico de Segurança do trabalho, onde finalizei em março de 2018.</p>
-                      <p>Nesse curso aprendi técnicas e normas aplicadas ao ambiente de trabalho, e com essas técnicas, consigo cuidar melhor de mim, dos meus colegas de trabalho, prezando pelo bem estar de todos os colaboradores.</p>
+                      <h5 class="text-warning">Técnico de Segurança do Trabalho</h5>
+                      <p>A primeira formação que conquistei após o ensino médio foi Técnico de Segurança do trabalho, onde finalizei em março de 2018. Nesse curso aprendi técnicas e normas aplicadas ao ambiente de trabalho, relacionadas a saúde e segurança de todos os colaboradores.</p>
                       <p>Há conhecimentos que utilizo até hoje em serviços voluntários, como por exemplo: Primeiros Socorros, Prevenção e Combate a Incêndios e Trabalho em Altura.</p>
                       <p>Esta é uma área muito interessante, e embora não trabalho mais nela, prezo pela segurança no trabalho e dou muito valor aos técnicos de segurança do trabalho. Espero um dia poder usar a tecnologia para aprimorar as técnicas destes habilidosos profissionais.</p>
                     </div>
                     <div class="carousel-item">
-                      <h4 class="text-warning">Análise e Desenvolvimento de Sistemas</h4>
-                      <p>Esta é a formação mais recente que tenho, sendo finalizada em junho de 2023.</p>
-                      <p>Neste curso, aprendi um pouco de cada área que compõe um sistema (Redes, Banco de Dados, Engenharia de Sistema, Linguagem de Programação etc).</p>
-                      <p>As atividades deste curso me ajudaram a entender o quão amplo é o mercado de trabalho, e que constantemente devo estudar para acompanhar as tecnologias e ter um bom desempenho em minhas atividades.</p>
+                      <h5 class="text-warning">Análise e Desenvolvimento de Sistemas</h5>
+                      <p>Esta é a formação mais recente que tenho, sendo finalizada em junho de 2023. Neste curso, aprendi um pouco de cada área que compõe um sistema (Redes, Banco de Dados, Engenharia de Sistema, Linguagem de Programação etc).</p>
+                      <p>Aprendi neste curso como o mercado de trabalho, e que os estudos devem ser frequentes para acompanhar as novas tecnologias.</p>
                       <p>Outra atividade complementar realizada foi o bootcamp na Instituição Generation Brasil, que me ensinou técnicas de programação Full Stack. Os conhecimentos adquiridos neste bootcamp me ajudaram a ter sucesso nesta formação Acadêmica.</p>
                     </div>
                     <div class="carousel-item">
-                      <h4 class="text-warning">Desenvolvedor Full Stack Java Jr.</h4>
+                      <h5 class="text-warning">Desenvolvedor Full Stack Java Jr.</h5>
                       <p>Esta formação me ajudou a ingressar no mercado de trabalho. Foram 3 meses estudando metodologias, conceito e boas práticas de programação até a minha formação, em abril de 2023.</p>
                       <p>Conheci a Linguagem de Programação Java, desenvolvimento com Spring Boot, utilização de Javascript, CSS, Typescript com o Visual Studio Code, testes com Postman e manipulação básica de dados com MySQL.</p>
                       <p>Graças a esses conhecimentos consegui minha primeira atividade profissional no Hospital Israelita Albert Einstein, realizando estágio na Área de Dados, no núcleo BI do Big Data.</p>
@@ -166,33 +178,28 @@
       <hr>
     </div>
 
-    <!--Experiência Profissional-->
-    <div class="img4">
+  </section>
+  <!--/Formação Acadêmica-->
+
+  <!--Experiência Profissional-->
+  <section>
+
+    <div >
       <div class="letra alinhamento4-div">
         <div class="row">
           <div class="col"></div>
           <div class="col-md-18">
-            <h3 class="text-light" id="Professional">Experiência Profissional</h3>
-
-            <div class="card card-body border-warning mb-3 start">
-
-              <div class="card-body text-warning">
-                <!--Lista de Opções-->
-                <div id="list-example" class="list-group">
-                  <ul class="nav">
-                    <li class="nav-item">
-                      <a class="list-group-item rounded-pill lista-hover" href="#list-item-1"><b><h5>Análise de Dados - Estágio</h5></b></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="list-group-item rounded-pill lista-hover" href="#list-item-2"><b><h5>Auxiliar Administrativo</h5></b></a>
-                    </li>
-                  </ul>
-                </div>
-                <!--/Lista de Opções-->
+            <div>
+            </div>
+            <div class="card card-body card-body-pro mb-3 start">
+              
+              <div class="card-body text-warning">  
+                
+                <h3 class="text-light" id="Professional" >Experiência Profissional</h3>
 
                 <!--Texto das Profissões-->
-                <div class="scrollspy-example letra">
-                  <h5 class="card-title text-light" id="list-item-1">
+                <div class="scrollspy-example letra" >
+                  <h5 class="card-title text-warning" style="margin-top: 5%">
                     <b>Análise de Dados - Hospital Israelita Albert Einstein</b>
                   </h5>
 
@@ -203,9 +210,11 @@
                   <p>Há outras ferramentas que utilizei no meu dia a dia de trabalho, como: Excel, Power BI, Dbdesigner etc.</p>
                   <p>Outra tarefa que gostei muito de realizar foi a criação de colunas e tabelas, para um novo projeto que estava iniciando. Seguindo o padrão de boas práticas, e com ajuda da Governança de Dados, era criado cards no Azure, onde as mudanças realizadas no Banco de Dados eram sugeridas e solicitadas para aprovação.</p>
                   <p>Uma característica positiva que desenvolvi no meu estágio foi o trabalho em equipe. Me esforcei para sempre pedir ajuda, estar disponível para auxiliar meus colegas de trabalho, ouvir críticas e escutar os erros que cometi e não voltar a cometê-los. Recebi muitos elogios por isso, e espero continuar desenvolvendo essa habilidade importante.</p>
-                  <p><a href="#Home" class="text-muted">Volte ao Início aqui</a></p>
+                  <div class="button-home">
+                    <a href="#Home" class="text-muted">Volte ao Início aqui</a>
+                  </div>
 
-                  <h5 class="card-title text-light" id="list-item-2">
+                  <h5 class="card-title text-warning" style="margin-top: 5%">
                     <b>Auxiliar Administrativo - Denart Comércio de Ferramentas e Soluções Construtivas</b>
                   </h5>
 
@@ -218,7 +227,10 @@
                   <p>Minha formação como Técnico de Segurança do Trabalho me deu algumas vantagens, visto que alguns produtos, como EPI's e EPC's, eram vendidos isso me ajudou a conhecer melhor as necessidades dos clientes.</p>
                   <p>Tive a chance de aprimorar minha comunicação e aprendi a ser firme quando a necessidade exigisse. O trabalho em equipe também foi importante, visto que algumas demandas eram altas e exigia muito tempo para reunir informações e repassar aos clientes.</p>
                   <p>Sempre fui muito elogiado por tratar bem os clientes e os funcionários, e á fui recompensado por isso. Fico feliz de, por muitas vezes, ser o destaque positivo pela sinceridade, e estou determinado a continuar desenvolvendo as qualidades que tenho.</p>
-                  <p><a href="#Home" class="text-muted">Volte ao Início aqui</a></p>
+                  <div class="button-home">
+                    <a href="#Home" class="text-muted">Volte ao Início aqui</a>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -245,8 +257,13 @@
   </div>
 -->
 
-    <!--Contato-->
-    <div class="img5">
+  </section>
+  <!--/Experiência Proffissional-->
+
+  <!--Contato-->
+  <section>
+
+    <div >
       <div class="letra alinhamento5-div">
         <div class="row">
           <div class="col-md-2"></div>
@@ -275,7 +292,8 @@
                   <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
                 </a></li>
 
-            
+            </ul>
+            <ul class="list-group list-group-horizontal justify-content-center card-body list-group-item-margem">
 
               <!--Facebook-->
               <li class="list-group-item"><h4 class="letra">Facebook</h4>
@@ -315,7 +333,14 @@
       </div>
     </div>
 
-  </div>
+  </section>
+  <!--/Contato-->
+
+
+
+
+
+
 
 
   <!--Bootstrap Javascript-->
