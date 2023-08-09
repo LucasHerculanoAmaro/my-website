@@ -28,7 +28,7 @@ button:hover {
 }
 
 .img1 {
-    background-image: url("/src/img/L_H_A.png");
+    background-image: url("img/L_H_A.png");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
