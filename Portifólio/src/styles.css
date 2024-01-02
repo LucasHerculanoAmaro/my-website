@@ -1,0 +1,185 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nova Square', sans-serif;
+    scroll-behavior: smooth;
+    button {
+        background: none;
+        border: none;
+    }
+    transition: 0.5s;
+}
+
+:root {
+    --primary: #f7fabe;
+    --body: #f7fabe;
+    --texto-into: #258730;
+    --imagem-fundo: url('C:\Users\lucas\Documents\Meu Portifólio - Angular\Portifólio\src\assets\Tema Claro.png');
+    --cor-alternativa: #000000;  
+}
+
+:root .dark-theme{
+    --primary: #000000;
+    --body: #000000 !important;
+    --texto-into: #87CB28 !important;
+   --imagem-fundo: url('C:\Users\lucas\Documents\Meu Portifólio - Angular\Portifólio\src\assets\Tema Escuro.png') !important;
+   --cor-alternativa: #f7fabe;
+}
+
+body{
+    background-color: var(--body) !important;
+    background-image: var(--imagem-fundo);
+    background-size: cover; /* Ajuste conforme necessário */
+    background-position: center; /* Ajuste conforme necessário */
+    background-repeat: no-repeat; /* Ajuste conforme necessário */
+    margin: 0; /* Remove margens padrão para evitar espaços extras */
+    height: 82vh; /* Garante que o body ocupe toda a altura da tela */
+}
+
+.container {
+    width: 100%;
+    aspect-ratio: 3/1;
+    padding: 40px 0;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-padding: -40px;
+    margin-top: 60px;
+}
+
+/*Fundo que corre*/
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--body); /*black*/
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+/*Linha que desce*/
+::-webkit-scrollbar-thumb {
+    background: var(--body); /*#FD801*/
+    border-radius: 15px;
+}
+
+/*Definição do botão para a mudança dos temas*/
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+  
+.label{
+    background: var('--body');
+    border-radius: 50px;
+    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    margin-left: 90px;
+    margin-top: 26px;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+  
+    transform: scale(1.5);
+
+}
+  
+.label .ball {
+    background-color: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  
+    height: 22px;
+    width: 22px;
+  
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+  
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+  
+.fa-moon {
+    color: #f1c40f;
+}
+  
+.fa-sun {
+    color: #f39c12;
+}
+
+/*Definição para transição suave de página*/
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2.0s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+} 
+
+
+@media (max-width: 1000px) and (orientation: portrait) {
+    body {
+        background-image: none !important;
+    }   
+    .container {
+        width: 100%;
+        aspect-ratio: 3/1;
+        padding: 20px 0;
+        margin: auto;
+        overflow-x: visible !important;
+        overflow-y: visible !important;
+        scroll-snap-type: y mandatory;
+        margin-top: 0px;
+    }  
+    .tema-pagina {
+        text-align: center !important;
+        margin-top: 70px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    body {
+        background-image: none !important;
+    }   
+    .container {
+        max-width: 90% !important;
+        aspect-ratio: 3/1;
+        padding: 20px 0;
+        margin: auto;
+        overflow-x: visible !important;
+        overflow-y: visible !important;
+        scroll-snap-type: y mandatory;
+        margin-top: 0px;
+    }  
+    .tema-pagina {
+        text-align: center !important;
+        margin-top: 70px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    body{
+        height: 100vh; 
+    }
+}
