@@ -8,10 +8,10 @@ import { MenuComponent } from './menu/menu.component';
 import { ProfissionalComponent } from './profissional/profissional.component';
 
 
-
 const routes: Routes = [
 
-  {path: '', redirectTo: 'inicio', pathMatch: 'full'}, 
+/* */
+{path: '', redirectTo: 'inicio', pathMatch: 'full'}, 
 
   { path: 'inicio', component:InicioComponent},
   { path: 'menu', component:MenuComponent},
