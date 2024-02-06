@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./start.component.css']
 })
 export class StartComponent {
+  constructor() { }
 
+  ngOnInit(): void {
+  }
 }
