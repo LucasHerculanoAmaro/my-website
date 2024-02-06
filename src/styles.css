@@ -7,70 +7,134 @@
     box-sizing: border-box;
     font-family: 'Nova Square', sans-serif;
     scroll-behavior: smooth;
+
     button {
         background: none;
         border: none;
     }
-    transition: 0.5s;
+
+    transition: 0.55s !important;
 }
 
-:root {
-    --primary: #f7fabe;
-    --body: #f7fabe;
-    --texto-into: #258730;
-    --imagem-fundo: url('C:\Users\lucas\Documents\Meu Portifólio - Angular\Portifólio\src\assets\Tema Claro.png');
-    --cor-alternativa: #000000;  
+body.tema-cinza {
+    /*Tema Cinza*/
+    --body: #404040;
+    --nav-border-background: #6B6B6B;
+
+    --body-container: #202020;
+
+    --card-gallery-color: #6B6B6B;
+
+    --hover-button-gallery: #808080;
+
+    --h2-a-nav-texto-color: #b7b7b7;
+
+    --box-shadow-button-gallery-rodape: black;
+
+    --box-shadow-container: black;
+
+    --rodape-background: #404040;
+
+    --button-gallery-a-hover: white;
+
+    --texto-btn-hover-active-disabled: #b7b7b7;
 }
 
-:root .dark-theme{
-    --primary: #000000;
-    --body: #000000 !important;
-    --texto-into: #87CB28 !important;
-   --imagem-fundo: url('C:\Users\lucas\Documents\Meu Portifólio - Angular\Portifólio\src\assets\Tema Escuro.png') !important;
-   --cor-alternativa: #f7fabe;
+body.tema-bege {
+
+    /*Tema Bege*/
+    --body: #F5F8B6;
+    --nav-border-background: #919458;
+
+    --body-container: #D4D797;
+
+    --card-gallery-color: #D4D797;
+
+    --hover-button-gallery: #F5F8B6;
+
+    --h2-a-nav-texto-color: black;
+
+    --box-shadow-button-gallery-rodape: #919458;
+
+    --box-shadow-container: #919458;
+
+    --rodape-background: #919458;
+
+    --button-gallery-a-hover: white;
+
+    --texto-btn-hover-active-disabled: black;
+
+    --recado-color: #919458;
 }
 
-body{
+body.tema-azul {
+    
+    /*Tema Azul Escuro*/
+    --body: #95AEC9;
+    --nav-border-background: #95AEC9;
+
+    --body-container: #B1CAE4;
+
+    --card-gallery-color: #CDE6FF;
+
+    --hover-button-gallery: #CDE6FF;
+
+    --h2-a-nav-texto-color: black;
+
+    --box-shadow-button-gallery-rodape: #7996b5;
+
+    --box-shadow-container: #4a6b8d;
+
+    --rodape-background: #95AEC9;
+
+    --button-gallery-a-hover: white;
+
+    --texto-btn-hover-active-disabled: black;
+
+    --recado-color: black;
+}
+
+body {
     background-color: var(--body) !important;
-    background-image: var(--imagem-fundo);
-    background-size: cover; /* Ajuste conforme necessário */
-    background-position: center; /* Ajuste conforme necessário */
-    background-repeat: no-repeat; /* Ajuste conforme necessário */
-    margin: 0; /* Remove margens padrão para evitar espaços extras */
-    height: 82vh; /* Garante que o body ocupe toda a altura da tela */
 }
 
-.container {
-    width: 100%;
-    aspect-ratio: 3/1;
-    padding: 40px 0;
-    margin: auto;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-padding: -40px;
-    margin-top: 60px;
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2.0s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /*Fundo que corre*/
 ::-webkit-scrollbar {
-    width: 10px;
-    background: var(--body); /*black*/
+    width: 0px;
+    height: 0px;
+    background: var(--body);
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
 
 /*Linha que desce*/
 ::-webkit-scrollbar-thumb {
-    background: var(--body); /*#FD801*/
+    background: var(--body);
     border-radius: 15px;
 }
 
-/*Definição do botão para a mudança dos temas*/
+/*Definição do botão para a mudança dos temas
 .checkbox {
     opacity: 0;
     position: absolute;
-}
+}*/
+
+/*
   
 .label{
     background: var('--body');
@@ -117,8 +181,9 @@ body{
 .fa-sun {
     color: #f39c12;
 }
+*/
 
-/*Definição para transição suave de página*/
+/*Definição para transição suave de página
 .fade-in {
     opacity: 0;
     animation: fadeIn 2.0s ease-in-out forwards;
@@ -132,54 +197,4 @@ body{
       opacity: 1;
     }
 } 
-
-
-@media (max-width: 1000px) and (orientation: portrait) {
-    body {
-        background-image: none !important;
-    }   
-    .container {
-        width: 100%;
-        aspect-ratio: 3/1;
-        padding: 20px 0;
-        margin: auto;
-        overflow-x: visible !important;
-        overflow-y: visible !important;
-        scroll-snap-type: y mandatory;
-        margin-top: 0px;
-    }  
-    .tema-pagina {
-        text-align: center !important;
-        margin-top: 70px;
-        font-weight: bold;
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 1000px) and (orientation: landscape) {
-    body {
-        background-image: none !important;
-    }   
-    .container {
-        max-width: 90% !important;
-        aspect-ratio: 3/1;
-        padding: 20px 0;
-        margin: auto;
-        overflow-x: visible !important;
-        overflow-y: visible !important;
-        scroll-snap-type: y mandatory;
-        margin-top: 0px;
-    }  
-    .tema-pagina {
-        text-align: center !important;
-        margin-top: 70px;
-        font-weight: bold;
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 1200px) {
-    body{
-        height: 100vh; 
-    }
-}
+*/

@@ -1,0 +1,378 @@
+.img-temas{
+    color: var(--body);
+}
+
+.img-temas:hover {
+    background-color: var(--card-gallery-color);
+    border-radius: 30px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 712px;
+    max-width: 750px;
+    width: 70%;
+    height: 600px;
+    background-color: var(--body-container);
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px var(--box-shadow-container);
+}
+
+/*Menu*/
+.paint{
+    text-align: left; 
+    margin-right: 30%
+}
+
+.tooltip-text {
+    display: none;
+    position: absolute;
+    background-color: var(--nav-border-background);
+    box-shadow: 5px 5px 15px var(--box-shadow-button-gallery-rodape);
+    padding: 8px;
+    border-radius: 25px;
+    z-index: 1;
+    width: 113px;
+    top: 11%;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+.menu-container:hover .tooltip-text {
+    display: block;
+}
+
+button {
+    box-shadow: 5px 5px 15px var(--box-shadow-button-gallery-rodape);
+    margin-left: 10px;
+}
+
+.nav {
+    color: var(--h2-a-nav-texto-color);
+    --bs-nav-link-color: none;
+    --bs-nav-link-hover-color: none;
+
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--h2-a-nav-texto-color);
+    background-color: var(--nav-border-background);
+    border-color: var(--nav-border-background);
+    border-radius: 30px;
+    /*   transition: color 1.15s ease-in-out,background-color 1.15s ease-in-out,border-color 1.15s ease-in-out;
+
+    border-color: #88BB44 #88BB44 #A2D25D;*/
+}
+
+.nav-tabs {
+    /*border-bottom: 1px solid * #88BB44white;*/
+    --bs-nav-tabs-link-hover-border-color: var(--nav-border-background);
+    margin-bottom: none;
+    border-radius: 30px;
+    --bs-nav-tabs-link-hover-border-color: transparent;
+    --bs-nav-tabs-border-color: none;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 30px !important;
+}
+
+button:hover {
+    background-color: var(--hover-button-gallery);
+    box-shadow: 5px 5px 15px var(--button-gallery-a-hover) !important;
+    margin-top: -10px;
+}
+
+/*Apresentação*/
+.academico {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.card {
+    margin-top: 60px;
+    max-width: 500px;
+    background-color: var(--card-gallery-color);
+}
+
+/*Cards dos Estudo*/
+h2 {
+    color: var(--h2-a-nav-texto-color);
+}
+
+.lista-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+div.gallery {
+    background-color: var(--card-gallery-color);
+    margin: 5px;
+    border-radius: 30px;
+    float: left;
+    width: 230px;
+    height: 390px;
+    box-shadow: 5px 5px 15px var(--box-shadow-button-gallery-rodape);
+    color: var(--h2-a-nav-texto-color);
+}
+
+.gallery-estudos{
+    height: 130px !important;
+    margin: 100px 5px 170px 5px !important;
+}
+
+.gallery-projetos {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.gallery-projetos:hover {
+    background-color: var(--card-gallery-color) !important;
+}
+
+div.gallery:hover {
+    box-shadow: 5px 5px 15px var(--button-gallery-a-hover);
+    background-color: var(--hover-button-gallery);
+}
+
+div.desc {
+    padding: 15px;
+    text-align: left;
+}
+
+summary {
+    list-style: none;
+}
+
+h6 {
+    margin-top: 15px;
+}
+
+.texto-projetos {
+    height: 395px;
+    max-width: 300px;
+    margin: 0px 0px 0px 10px;
+    padding: 10px;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.nav-pills .nav-link {
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+.nav-pills .nav-link.active {
+    color: var(--h2-a-nav-texto-color);
+    background-color: var(--nav-border-background);
+}
+
+a {
+    text-decoration: none;
+    color: var(--h2-a-nav-texto-color);
+}
+
+a:hover {
+    color: var(--button-gallery-a-hover);
+}
+
+.carousel {
+    margin-bottom: 20px;
+}
+
+.img-projetos {
+    width: 80% !important;
+    margin-left: 32px;
+}
+
+.button-projetos {
+    box-shadow: none !important;
+}
+
+/*Rodapé*/
+.rodape {
+    background-color: var(--rodape-background);
+    box-shadow: 5px 5px 15px var(--box-shadow-button-gallery-rodape);
+    border-radius: 30px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 0px 130px 0px 100px;
+}
+
+.align-list {
+    display: inline-block;
+    margin-left: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.list-total {
+    text-align: center;
+    justify-content: center center;
+}
+
+.list-contact {
+    margin-top: 10px;
+}
+
+img:hover {
+    background-color: var(--card-gallery-color);
+    border-radius: 30px;
+}
+
+.recado {
+    color: var(--recado-color);
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 450px) and (orientation:portrait) {
+
+    /*Menu*/
+    .paint{
+        margin: 20px 0px 0px -30px;
+    }
+
+    .nav-page {
+        justify-content: center !important;
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 90%;
+        max-width: 90%;
+        width: 70%;
+        height: 700px;
+        background-color: var(--body-container);
+        text-align: center;
+        padding: 20px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 15px var(--box-shadow-container);
+        padding: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    /*Cards Estudos*/
+    .lista-cards {
+        display: -webkit-box;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        padding: 10px 10px 15px 10px;
+    }
+
+    .lista-cards-estudos{
+        display: inline-grid;
+    }
+
+    /*Meus Projetos*/
+    .row-projetos{
+        display: block;
+    }
+
+    .texto-projetos{
+        width: 130%;
+    }
+
+    /*Rodapé*/
+    .rodape {
+        padding: 0px;
+        margin-right: 0px;
+    }
+
+    div.gallery{
+        width: 100%;
+    }
+
+    .gallery-estudos{
+        height: 130px !important;
+        margin: 5px !important;
+    }
+
+    .align-list {
+        margin-left: 20px;
+    }
+
+    .list-contact{
+        text-align: center;
+        padding: 1px 1px 10px 1px;
+    }
+
+    .gallery-projetos {
+        width: 100% !important;
+    }
+
+    .img-temas{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-height: 450px) and (orientation:landscape){
+    .container{
+        height: 90%;
+        overflow: auto;
+    }
+
+    .tooltip-text{
+        top: 22%;
+        left: 9%;
+    }
+
+    .nav{
+        margin-top: 10px;
+    }
+
+    .lista-cards{
+        margin-top: 0px;
+    }
+
+    h6{
+        margin-top: 0px;
+    }
+
+    div.desc{
+        padding: 5px;
+    }
+
+    div.gallery {
+        background-color: var(--card-gallery-color);
+        margin: 5px;
+        border-radius: 30px;
+        float: left;
+        width: 230px;
+        
+        box-shadow: 5px 5px 15px var(--box-shadow-button-gallery-rodape);
+        color: var(--h2-a-nav-texto-color);
+        overflow-y: auto;
+    }
+
+    .gallery-estudos{
+        height: 130px !important;
+        margin: 30px 5px 30px 5px !important;
+    }
+
+    .rodape{
+        margin-top: 10px;
+        padding: 0px 135px 0px 100px;
+    }
+
+    .recado{
+        display: none;
+    }
+}
