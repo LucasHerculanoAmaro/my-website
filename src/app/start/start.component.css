@@ -1,0 +1,186 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 712px;
+    max-width: 750px;
+    width: 70%;
+    height: 400px;
+    background-color: var(--body-container);
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px var(--box-shadow-container);
+    display: flex;
+}
+
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+}
+
+.tooltip-text {
+    display: none;
+    position: absolute;
+    background-color: var(--nav-border-background);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    z-index: 1;
+    width: 300px;
+    top: -10%;
+    left: 61%;
+    transform: translateX(-50%);
+}
+
+.image-container:hover .tooltip-text {
+    display: block;
+}
+
+img {
+    padding: 4% 4% 18% 4%;
+    margin-left: 0%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    background-color: #D9D9D9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-13deg);
+    box-shadow: 10px 10px 7px var(--box-shadow-button-gallery-rodape);
+    cursor: pointer;
+}
+
+img:hover {
+    background-color: white;
+    transform: translate(30px);
+}
+
+.texto {
+    margin-top: 12%;
+    padding: 20px 30px 20px 40px;
+    text-align: left;
+    color: var(--texto-btn-hover-active-disabled);
+}
+
+.proximo {
+    text-align: right;
+}
+
+.margem-texto {
+    /* 
+    padding: 20px 20px 0px 10%;*/
+    font-size: 25px;
+    color: var(--texto-btn-hover-active-disabled);
+}
+
+li {
+    list-style-type: circle;
+}
+
+.btn-outline-success {
+    --bs-btn-color: var(--texto-btn-hover-active-disabled);
+    --bs-btn-border-color: var(--texto-btn-hover-active-disabled);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--texto-btn-hover-active-disabled);
+    --bs-btn-hover-border-color: var(--texto-btn-hover-active-disabled);
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--texto-btn-hover-active-disabled);
+    --bs-btn-active-border-color: var(--texto-btn-hover-active-disabled);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--texto-btn-hover-active-disabled);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--texto-btn-hover-active-disabled);
+    --bs-gradient: none;
+    box-shadow: 5px 5px 5px var(--box-shadow-button-gallery-rodape);
+}
+
+@media screen and (max-width: 450px) and (orientation:portrait) {
+    .container {
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 90%;
+        max-width: 149px;
+        width: 70%;
+        height: 400px;
+        background-color: var(--body-container);
+        text-align: center;
+        padding: 20px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 15px var(--box-shadow-container);
+        display: inline-table;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .tooltip-text{
+        top: 0%;
+        left: 50%;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .texto {
+        padding: 20px 10px 20px 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    .proximo {
+        text-align: center;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-height: 450px) and (orientation:landscape) {
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 80%;
+        max-width: 750px;
+        width: 70%;
+        height: 90%;
+        background-color: var(--body-container);
+        text-align: center;
+        padding: 20px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 15px var(--box-shadow-container);
+        display: flex;
+    }
+
+    img {
+        max-width: 250px;
+    }
+
+    .texto {
+        margin-top: 10%;
+        padding: 20px 10px 10px 40px;
+        margin-left: 10px;
+        text-align: left;
+        color: var(--texto-btn-hover-active-disabled);
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}
