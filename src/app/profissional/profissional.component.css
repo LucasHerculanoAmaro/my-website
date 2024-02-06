@@ -1,0 +1,35 @@
+.experience{
+    margin-left: 290px;
+    margin-right: 10px;
+    color: #FCA61F;
+}
+p{
+    font-size: 20px;
+}
+
+@media (max-width: 1000px) and (orientation: portrait) {
+    .experience{
+        margin-left: 0px;
+        margin-right: 0px;
+        color: #FCA61F;
+    }
+    .text-profissional{
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 10px 20px;
+    }
+    p{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    .experience{
+        margin-left: 0px;
+        margin-right: 0px;
+        color: #FCA61F;
+    }
+    p{
+        font-size: 30px;
+    }
+}
