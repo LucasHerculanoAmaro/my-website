@@ -5,13 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageComponent } from './page/page.component';
 import { StartComponent } from './start/start.component';
+import { MenuComponent } from './menu/menu.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PageComponent,
-    StartComponent
+    StartComponent,
+    MenuComponent,
+    FooterComponent
   ],
   
   imports: [
