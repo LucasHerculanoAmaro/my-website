@@ -1,0 +1,13 @@
+hr {
+    box-sizing: border-box;
+    width: 100%;
+    opacity: 1;
+    border-top: 5px solid var(--body);
+    border-radius: 5px;
+}
+
+section {
+    position: relative;
+    height: 15%;
+    margin: 15px;
+}

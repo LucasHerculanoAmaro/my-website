@@ -1,0 +1,33 @@
+hr {
+    box-sizing: border-box;
+    width: 100%;
+    opacity: 1;
+    border-top: 5px solid var(--body);
+    border-radius: 5px;
+}
+
+section {
+    position: relative;
+    height: 15%;
+    margin: 15px;
+}
+
+.nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 5px;
+    padding: 5px;
+}

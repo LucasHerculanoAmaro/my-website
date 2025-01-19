@@ -1,0 +1,23 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* min-width: 712px; */
+    /* max-width: 750px; */
+    /* width: 90%; */
+    height: 95%;
+    background-color: var(--body-container);
+    text-align: center;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    /* box-shadow: 5px 5px 15px var(--box-shadow-container); */
+    /* display: flex; */
+}
+
+.principal-box {
+    position: relative;
+    height: 70%;
+    margin: 15px;
+}

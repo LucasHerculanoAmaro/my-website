@@ -16,37 +16,13 @@
     transition: 0.55s !important;
 }
 
-body.tema-cinza {
-    /*Tema Cinza*/
-    --body: #404040;
-    --nav-border-background: #6B6B6B;
+body.principal {
 
-    --body-container: #202020;
-
-    --card-gallery-color: #6B6B6B;
-
-    --hover-button-gallery: #808080;
-
-    --h2-a-nav-texto-color: #b7b7b7;
-
-    --box-shadow-button-gallery-rodape: black;
-
-    --box-shadow-container: black;
-
-    --rodape-background: #404040;
-
-    --button-gallery-a-hover: white;
-
-    --texto-btn-hover-active-disabled: #b7b7b7;
-}
-
-body.tema-bege {
-
-    /*Tema Bege*/
-    --body: #F5F8B6;
-    --nav-border-background: #919458;
+    --body: #48793C;
 
     --body-container: #D4D797;
+
+    --nav-border-background: #919458;
 
     --card-gallery-color: #D4D797;
 
@@ -67,9 +43,8 @@ body.tema-bege {
     --recado-color: #919458;
 }
 
-body.tema-azul {
+body.secondary {
     
-    /*Tema Azul Escuro*/
     --body: #95AEC9;
     --nav-border-background: #95AEC9;
 

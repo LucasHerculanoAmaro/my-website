@@ -7,6 +7,7 @@ import { PageComponent } from './page/page.component';
 import { StartComponent } from './start/start.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     PageComponent,
     StartComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   
   imports: [
