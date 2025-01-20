@@ -11,3 +11,29 @@ section {
     height: 15%;
     margin: 15px;
 }
+
+/*Rodapé*/
+.rodape {
+    /* background-color: var(--rodape-background); */
+    /* box-shadow: 5px 5px 15px var(--box-shadow-button-gallery-rodape);
+    border-radius: 30px;
+    height: 40px;
+    margin-top: 20px; */
+    padding: 0px 130px 0px 100px;
+}
+
+.align-list {
+    display: inline-block;
+    margin-left: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.list-total {
+    text-align: center;
+    justify-content: center center;
+}
+
+.list-contact {
+    margin-top: 10px;
+}
