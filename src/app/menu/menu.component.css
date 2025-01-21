@@ -4,12 +4,16 @@ hr {
     opacity: 1;
     border-top: 5px solid var(--body);
     border-radius: 5px;
+    margin: 0px;
+    margin: 2px;
 }
 
 section {
     position: relative;
     height: 15%;
-    margin: 15px;
+    margin: 5px;
+
+    text-transform: uppercase;
 }
 
 .nav {
@@ -30,4 +34,9 @@ ul {
 li {
     margin: 5px;
     padding: 5px;
+}
+
+li:hover {
+    text-decoration: 2px underline var(--body);
+    color: var(--body);
 }

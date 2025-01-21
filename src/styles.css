@@ -22,33 +22,14 @@ body.principal {
 
     --body-container: #D4D797;
 
-    --nav-border-background: #919458;
-
-    --card-gallery-color: #D4D797;
-
-    --hover-button-gallery: #F5F8B6;
-
-    --h2-a-nav-texto-color: black;
-
-    --box-shadow-button-gallery-rodape: #919458;
-
-    --box-shadow-container: #919458;
-
-    --rodape-background: #919458;
-
-    --button-gallery-a-hover: white;
-
-    --texto-btn-hover-active-disabled: black;
-
-    --recado-color: #919458;
 }
 
 body.secondary {
     
-    --body: #95AEC9;
-    --nav-border-background: #95AEC9;
+    --body: #825B27;
+    /* --nav-border-background: #825B27; */
 
-    --body-container: #B1CAE4;
+    --body-container: #D4D797;
 
     --card-gallery-color: #CDE6FF;
 

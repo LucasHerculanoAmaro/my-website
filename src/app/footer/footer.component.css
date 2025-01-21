@@ -1,25 +1,38 @@
+section {
+    position: relative;
+    height: 15%;
+    margin: 15px;
+    font-size: 10px;
+}
+
+p {
+    margin: 0px;
+}
+
 hr {
     box-sizing: border-box;
     width: 100%;
     opacity: 1;
     border-top: 5px solid var(--body);
     border-radius: 5px;
-}
-
-section {
-    position: relative;
-    height: 15%;
-    margin: 15px;
+    margin: 2px;
 }
 
 /*Rodapé*/
-.rodape {
-    /* background-color: var(--rodape-background); */
-    /* box-shadow: 5px 5px 15px var(--box-shadow-button-gallery-rodape);
-    border-radius: 30px;
-    height: 40px;
-    margin-top: 20px; */
-    padding: 0px 130px 0px 100px;
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5px;
+    margin-right: 40px;
+    padding: 0px;
+
+    img {
+        width: 30px !important;
+        height: 30px !important;
+
+    }
 }
 
 .align-list {
@@ -32,8 +45,4 @@ section {
 .list-total {
     text-align: center;
     justify-content: center center;
-}
-
-.list-contact {
-    margin-top: 10px;
 }
