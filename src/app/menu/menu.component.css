@@ -40,3 +40,17 @@ li:hover {
     text-decoration: 2px underline var(--body);
     color: var(--body);
 }
+
+@media screen and (max-width: 450px) and (orientation:portrait) {
+    li {
+        margin: 2px;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 920px) and (orientation:landscape) {
+    li {
+        margin: 2px;
+        padding: 2px;
+    }
+}

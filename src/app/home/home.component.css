@@ -16,3 +16,21 @@
     height: 75%;
     margin: 15px;
 }
+
+@media screen and (max-width: 450px) and (orientation: portrait) {
+
+    .principal-box {
+        height: 80%;
+    }
+
+}
+
+@media screen and (max-width: 920px) and (orientation:landscape) {
+    
+    .principal-box {
+        height: 70%;
+    }
+
+
+
+}
