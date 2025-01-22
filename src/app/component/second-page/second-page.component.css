@@ -1,0 +1,13 @@
+.container {
+    text-align: left;
+}
+
+h3 {
+    color: var(--body);
+}
+
+hr {
+    background-color: var(--body);
+    width: 20%;
+    height: 3px;
+}

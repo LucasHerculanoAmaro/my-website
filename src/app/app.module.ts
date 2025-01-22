@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { FirstPageComponent } from './component/first-page/first-page.component';
+import { SecondPageComponent } from './component/second-page/second-page.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FirstPageComponent } from './component/first-page/first-page.component'
     MenuComponent,
     FooterComponent,
     HomeComponent,
-    FirstPageComponent
+    FirstPageComponent,
+    SecondPageComponent
   ],
   
   imports: [
