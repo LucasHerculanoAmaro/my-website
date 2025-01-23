@@ -34,11 +34,17 @@ ul {
 li {
     margin: 5px;
     padding: 5px;
+
+    color: var(--body);
 }
 
 li:hover {
-    text-decoration: 2px underline var(--body);
-    color: var(--body);
+    background-color: var(--body);
+    color: white;
+    cursor: pointer;
+
+    /* border: 1px solid black; */
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 450px) and (orientation:portrait) {

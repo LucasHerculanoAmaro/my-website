@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { FirstPageComponent } from './component/first-page/first-page.component';
 import { SecondPageComponent } from './component/second-page/second-page.component';
+import { ProfessionalComponent } from './component/professional/professional.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SecondPageComponent } from './component/second-page/second-page.compone
     FooterComponent,
     HomeComponent,
     FirstPageComponent,
-    SecondPageComponent
+    SecondPageComponent,
+    ProfessionalComponent
   ],
   
   imports: [
