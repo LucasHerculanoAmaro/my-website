@@ -2,7 +2,7 @@
     text-align: left;
 }
 
-h3, b {
+h3, b, a {
     color: var(--body);
 }
 

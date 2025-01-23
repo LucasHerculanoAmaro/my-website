@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { FirstPageComponent } from './component/first-page/first-page.component';
 import { SecondPageComponent } from './component/second-page/second-page.component';
 import { ProfessionalComponent } from './component/professional/professional.component';
+import { ProjectsComponent } from './component/projects/projects.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ProfessionalComponent } from './component/professional/professional.com
     HomeComponent,
     FirstPageComponent,
     SecondPageComponent,
-    ProfessionalComponent
+    ProfessionalComponent,
+    ProjectsComponent
   ],
   
   imports: [
