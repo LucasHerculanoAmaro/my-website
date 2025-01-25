@@ -15,11 +15,9 @@
 
   <app-root></app-root>
   
-  <script>
+  <!-- <script>
     // Lista de temas
-    const themes = [
-      'secondary',
-      'principal'];
+    const themes = [ 'secondary','principal' ];
 
     // Variável para restrear o tema atual
     let currentThemeIndex = 0;
@@ -37,7 +35,35 @@
         currentThemeIndex = 0;
       }
     }
-  </script>
+  </script> -->
+
+  <script>
+    // Lista de temas
+    const themes = ['secondary', 'principal'];
+
+    // Variável para rastrear o tema atual
+    let currentThemeIndex = 0;
+
+    // Função para aplicar um tema e salvar no localStorage
+    function applyTheme(themeIndex) {
+        document.body.className = themes[themeIndex]; // Aplica o tema
+        localStorage.setItem('selectedThemeIndex', themeIndex); // Salva o índice no localStorage
+    }
+
+    // Função para alternar temas
+    function cycleThemes() {
+        currentThemeIndex = (currentThemeIndex + 1) % themes.length; // Incrementa o índice
+        applyTheme(currentThemeIndex); // Aplica o próximo tema
+    }
+
+    // Recupera e aplica o tema salvo ao carregar a página
+    document.addEventListener("DOMContentLoaded", function () {
+        const savedThemeIndex = localStorage.getItem('selectedThemeIndex'); // Recupera do localStorage
+        currentThemeIndex = savedThemeIndex !== null ? parseInt(savedThemeIndex, 10) : 0; // Define o índice inicial
+        applyTheme(currentThemeIndex); // Aplica o tema
+    });
+</script>
+
 
   <script    
     src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 

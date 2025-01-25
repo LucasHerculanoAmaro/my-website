@@ -12,14 +12,12 @@
         background: none;
         border: none;
     }
-
-    transition: 0.55s !important;
+    
 }
 
 body.principal {
 
     --body: #48793C;
-
     --body-container: #D4D797;
 
 }
@@ -27,28 +25,9 @@ body.principal {
 body.secondary {
     
     --body: #825B27;
-    /* --nav-border-background: #825B27; */
-
     --body-container: #D4D797;
-
-    --card-gallery-color: #CDE6FF;
-
-    --hover-button-gallery: #CDE6FF;
-
-    --h2-a-nav-texto-color: black;
-
-    --box-shadow-button-gallery-rodape: #7996b5;
-
-    --box-shadow-container: #4a6b8d;
-
-    --rodape-background: #95AEC9;
-
-    --button-gallery-a-hover: white;
-
-    --texto-btn-hover-active-disabled: black;
-
-    --recado-color: black;
 }
+
 
 body {
     background-color: var(--body) !important;
@@ -71,9 +50,9 @@ body {
 
 /*Fundo que corre*/
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 3px;
     height: 0px;
-    background: var(--body);
+    background: var(--body-container);
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
