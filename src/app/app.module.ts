@@ -9,6 +9,7 @@ import { ProfessionalComponent } from './component/professional/professional.com
 import { ProjectsComponent } from './component/projects/projects.component';
 import { IntroductionComponent } from './component/introduction/introduction.component';
 import { StudiesComponent } from './component/studies/studies.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -28,7 +29,10 @@ import { StudiesComponent } from './component/studies/studies.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy, useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
+  // , {provide: LocationStrategy, useClass: HashLocationStrategy}
 })
 export class AppModule { }
