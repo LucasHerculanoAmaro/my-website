@@ -16,18 +16,14 @@
 }
 
 body.principal {
-
     --body: #48793C;
     --body-container: #D4D797;
-
 }
 
 body.secondary {
-    
     --body: #825B27;
     --body-container: #D4D797;
 }
-
 
 body {
     background-color: var(--body) !important;

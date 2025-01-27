@@ -1,6 +1,6 @@
 .container {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     
@@ -31,7 +31,7 @@
     border-radius: 4px;
     z-index: 1;
     width: 300px;
-    top: -10%;
+    top: -7%;
     left: 65%;
     transform: translateX(-50%);
 }

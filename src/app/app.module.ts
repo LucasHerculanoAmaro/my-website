@@ -9,8 +9,6 @@ import { ProfessionalComponent } from './component/professional/professional.com
 import { ProjectsComponent } from './component/projects/projects.component';
 import { IntroductionComponent } from './component/introduction/introduction.component';
 import { StudiesComponent } from './component/studies/studies.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-
 
 @NgModule({
   declarations: [
