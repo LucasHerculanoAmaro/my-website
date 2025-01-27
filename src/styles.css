@@ -8,7 +8,7 @@
     font-family: 'Nova Square', sans-serif;
     scroll-behavior: smooth;
 
-    button {
+    :is(button) {
         background: none;
         border: none;
     }

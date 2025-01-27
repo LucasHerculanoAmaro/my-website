@@ -28,7 +28,7 @@ ul {
     /* margin-right: 40px; */
     padding: 0px;
 
-    img {
+    :is(img) {
         width: 30px !important;
         height: 30px !important;
 

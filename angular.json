@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "denartDesign": {
+    "meuPortfolio": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -36,6 +36,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/meuPortfolio/",
               "budgets": [
                 {
                   "type": "initial",
@@ -44,8 +45,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "2mb"
                 }
               ],
               "outputHashing": "all"
@@ -71,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "denartDesign:build:production"
+              "browserTarget": "meuPortfolio:build:production"
             },
             "development": {
-              "browserTarget": "denartDesign:build:development"
+              "browserTarget": "meuPortfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "denartDesign:build"
+            "browserTarget": "meuPortfolio:build"
           }
         },
         "test": {
