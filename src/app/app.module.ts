@@ -9,6 +9,7 @@ import { IntroductionComponent } from './pages/introduction/introduction.compone
 import { ProfessionalComponent } from './pages/professional/professional.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { StudiesComponent } from './pages/studies/studies.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,10 @@ import { StudiesComponent } from './pages/studies/studies.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
+  providers: [{
+    provide: LocationStrategy, 
+    useClass: HashLocationStrategy
+  },
     provideClientHydration()
   ],
   bootstrap: [AppComponent]

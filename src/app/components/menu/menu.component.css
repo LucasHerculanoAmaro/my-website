@@ -40,10 +40,6 @@ li {
 
 button {
     text-transform: uppercase;
-
-}
-
-a {
     text-decoration: none;
     color: var(--body);
 }
@@ -56,7 +52,7 @@ li:hover {
     /* border: 1px solid black; */
     border-radius: 5px;
 
-    :is(a) {
+    :is(button) {
         color: white;
     }
 }

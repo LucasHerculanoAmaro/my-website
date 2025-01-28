@@ -6,12 +6,12 @@ import { ProfessionalComponent } from './pages/professional/professional.compone
 import { ProjectsComponent } from './pages/projects/projects.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'}, 
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: IntroductionComponent },
+  { path: 'studies', component: StudiesComponent },
+  { path: 'professional', component: ProfessionalComponent },
+  { path: 'projects', component: ProjectsComponent },
   { path: '**', redirectTo: 'home' },
-  { path: 'home', component:IntroductionComponent },
-  { path: 'studies', component:StudiesComponent },
-  { path: 'professional', component:ProfessionalComponent },
-  { path: 'projects', component:ProjectsComponent }
 ];
 
 @NgModule({
