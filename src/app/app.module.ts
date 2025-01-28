@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { FooterComponent } from './footer/footer.component';
-import { ProfessionalComponent } from './component/professional/professional.component';
-import { ProjectsComponent } from './component/projects/projects.component';
-import { IntroductionComponent } from './component/introduction/introduction.component';
-import { StudiesComponent } from './component/studies/studies.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { IntroductionComponent } from './pages/introduction/introduction.component';
+import { ProfessionalComponent } from './pages/professional/professional.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { StudiesComponent } from './pages/studies/studies.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +22,13 @@ import { StudiesComponent } from './component/studies/studies.component';
     ProjectsComponent,
     StudiesComponent
   ],
-  
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideClientHydration()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

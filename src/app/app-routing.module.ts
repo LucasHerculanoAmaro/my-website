@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IntroductionComponent } from './component/introduction/introduction.component';
-import { StudiesComponent } from './component/studies/studies.component';
-import { ProfessionalComponent } from './component/professional/professional.component';
-import { ProjectsComponent } from './component/projects/projects.component';
+import { IntroductionComponent } from './pages/introduction/introduction.component';
+import { StudiesComponent } from './pages/studies/studies.component';
+import { ProfessionalComponent } from './pages/professional/professional.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 const routes: Routes = [
-
   { path: '', redirectTo: 'home', pathMatch: 'full'}, 
-
+  { path: '**', redirectTo: 'home' },
   { path: 'home', component:IntroductionComponent },
   { path: 'studies', component:StudiesComponent },
   { path: 'professional', component:ProfessionalComponent },
   { path: 'projects', component:ProjectsComponent }
-
 ];
 
 @NgModule({
@@ -21,4 +19,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
