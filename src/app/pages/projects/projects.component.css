@@ -1,0 +1,17 @@
+.container {
+    text-align: left;
+    
+}
+
+h3, b, a {
+    color: var(--body);
+}
+
+hr {
+    background-color: var(--body);
+
+    width: 20%;
+    height: 3px;
+
+    border-radius: 2px;
+}
