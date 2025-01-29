@@ -27,9 +27,13 @@
 }
 
 @media screen and (max-width: 920px) and (orientation:landscape) {
-    
+
+    .container {
+        max-width: 95%;
+    }
+
     .principal-box {
-        height: 70%;
+        height: 60%;
     }
 
 }

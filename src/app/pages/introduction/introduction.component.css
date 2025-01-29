@@ -1,18 +1,15 @@
 .container {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     
-    /* min-width: 731px; */
     max-width: 950px;
     width: 100%;
     height: 400px;
-    /* background-color: var(--body-container); */
     text-align: center;
     padding: 20px;
     border-radius: 50px;
-    /* box-shadow: 5px 5px 15px var(--box-shadow-container); */
     display: flex;
 }
 
@@ -53,7 +50,6 @@ img {
     align-items: center;
     transform: rotate(-13deg);
     transition: 0.55s !important;
-    /* box-shadow: 10px 10px 7px var(--box-shadow-button-gallery-rodape); */
     cursor: pointer;
 }
 
@@ -69,7 +65,7 @@ img:hover {
     color: var(--texto-btn-hover-active-disabled);
 }
 
-h3, b {
+h3, b, h2 {
     color: var(--body);
 }
 
@@ -116,11 +112,10 @@ li {
         max-width: 149px;
         width: 70%;
         height: 400px;
-        /* background-color: var(--body-container); */
         text-align: center;
         padding: 20px;
+        margin-top: 60px;
         border-radius: 50px;
-        /* box-shadow: 5px 5px 15px var(--box-shadow-container); */
         display: inline-table;
     }
 
@@ -129,16 +124,16 @@ li {
     }
 
     img {
-        margin-left: 15%
+        margin-left: 15%;
+        width: 60%
+    }
+    img:hover {
+        transform: translate(10px);
     }
 
     .tooltip-text{
         top: 0%;
         left: 50%;
-    }
-
-    img {
-        width: 70%;
     }
 
     .texto {
@@ -165,16 +160,14 @@ li {
         top: 47%;
         left: 50%;
         transform: translate(-50%, -50%);
-        /* min-width: 80%; */
         min-width: 100%;
         max-width: 750px;
         width: 70%;
         height: 100%;
-        /* background-color: var(--body-container); */
         text-align: center;
         padding: 0px;
+        margin-top: 10px;
         border-radius: 0px;
-        /* box-shadow: 5px 5px 15px var(--box-shadow-container); */
         display: flex;
     }
 
@@ -183,11 +176,7 @@ li {
     }
 
     .texto {
-        /* margin-top: 10%; */
         padding: 20px 10px 10px 40px;
-        /* margin-left: 10px; */
-        /* text-align: left; */
-        /* color: var(--texto-btn-hover-active-disabled); */
     }
 
     h2 {

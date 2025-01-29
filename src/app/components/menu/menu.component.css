@@ -49,7 +49,6 @@ li:hover {
     color: white !important;
     cursor: pointer;
 
-    /* border: 1px solid black; */
     border-radius: 5px;
 
     :is(button) {
